@@ -39,3 +39,13 @@ and without XML Schema definition, it is set to be **untyped DataSet**.
 DataView represents our databindable, customized view of a DataTable. The DataView does not store data, but instead represents a connected view of its corresponding DataTable. Changes to the DataView's data will affect the DataTable. Changes to the DataTable's data will affect all DataView's associated with it. DataView can be used for sorting, filtering, searching, editing, and navigation on the data.
 
 <img src="https://github.com/KiraDiShira/Ado/blob/master/AdoDisconnected/Images/adodisco4.PNG" />
+
+## Connection Oriented Model
+
+The connectivity between the application and the database has to be maintained until the application interacts with the database.
+
+Connection-oriented model can be used whenever we constantly make trips to the database to perform CRUD operations. This creates more traffic to the database, but is normally much faster when we perform smaller transactions. 
+
+<img src="https://github.com/KiraDiShira/Ado/blob/master/AdoDisconnected/Images/adodisco5.PNG" />
+
+Command object will use Connection to interact with our database, and it can interact with the application for executing the commands, and if the command is to retrieve the data, then the result of Command object will be passed to the DataReader object, which will interact with the application for projecting the data. DataReader object maintains the records retrieved by the Command object, and this object is a read-only and forward-only record set. That is, the data present within the DataReader object can be modified, and once the data has been read from the DataReader, again, we can't retrieve the previous data.
