@@ -10,6 +10,6 @@ ADO.NET supports two types of models for interacting with the database:
 
 <img src="https://github.com/KiraDiShira/Ado/blob/master/AdoDisconnected/Images/adodisco1.PNG" />
 
-### Connection**
+### Connection
 
 A connection sets a link between a data source and ADO.NET. Connection object establishes the physical connectivity between the application and the database with the support of connection string.
