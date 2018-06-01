@@ -30,6 +30,12 @@ DataSet can interact with any number of tables present in different databases, s
 
 Our DataSet object can also be considered as a collection of **DataTables**, **DataRelations**, and **XMLSchema**, where our **DataTable or a DataMember** of a DataSet is a collection of **DataColumns**, **DataRows**, and **Constraints**. Whenever our DataSet object is defined with the support of XML Schema definition, then we call it a **typed DataSet**, 
 
-<img src="https://github.com/KiraDiShira/Ado/blob/master/AdoDisconnected/Images/adodisco2.PNG" />
+<img src="https://github.com/KiraDiShira/Ado/blob/master/AdoDisconnected/Images/adodisco3.PNG" />
 
 and without XML Schema definition, it is set to be **untyped DataSet**. 
+
+### Dataview
+
+DataView represents our databindable, customized view of a DataTable. The DataView does not store data, but instead represents a connected view of its corresponding DataTable. Changes to the DataView's data will affect the DataTable. Changes to the DataTable's data will affect all DataView's associated with it. DataView can be used for sorting, filtering, searching, editing, and navigation on the data.
+
+<img src="https://github.com/KiraDiShira/Ado/blob/master/AdoDisconnected/Images/adodisco4.PNG" />
