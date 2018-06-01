@@ -1,4 +1,6 @@
-# Ado
+[Index](https://github.com/KiraDiShira/Ado/blob/master/README.md#adonet)
+
+# Introducing Ado.Net
 
 ADO.NET is framework for interacting with any database or XML documents from any .NET application.
 
